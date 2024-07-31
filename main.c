@@ -10,18 +10,16 @@ int main() {
         printf("Number of integers should be positive.\n");
         return 1;
     }
-
     int arr[n];
     int sum = 0;
-
     printf("Enter %d integers:\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
         sum += arr[i];
     }
-
+    
     double average = (double)sum / n;
+    
     printf("The average of the integers is: %.2f\n", average);
-
     return 0;
 }
